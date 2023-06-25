@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1C1C1C;
+    font-family: 'Roboto', sans-serif;
+}
+
+.game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cards-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1c1c1c;
+    border-radius: 10px;
+    width: 30rem;
+    height: 15rem;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.gradient-right{
+    background: linear-gradient(to right, #1c1c1c, #00000000);
+    height: 15rem;
+    width: 10rem;
+    position: absolute;
+    margin-right: 20rem;
+}
+
+.gradient-left{
+    background: linear-gradient(to left, #1c1c1c, #00000000);
+    height: 15rem;
+    width: 10rem;
+    position: absolute;
+    margin-left: 20rem;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFFFA;
+    height: 15rem;
+    width: 10rem;
+    border-radius: 10px;
+    color: #f02d46;
+}
+
+
+.win-game{
+    color: #f02d46;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.end-game{
+    color: #f02d46;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.counter-panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f02d46;
+    border-radius: 5px;
+    height: 3rem;
+    width: 5rem;
+    margin-bottom: 30px;
+    color: #FAFFFA;
+}
+
+.game-buttons-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.game-btn{
+    background-color: #f02d46;
+    border: none;
+    color: #FAFFFA;
+    height: 3rem;
+    width: 5.5rem;
+    border-radius: 0.3rem;
+    font-size: 20px;    
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.game-btn:hover{
+    background-color: #FAFFFA;
+    color: #f02d46;
+}
+
+#btn-restart{
+    background-color: #f02d46;
+    border: none;
+    color: #FAFFFA;
+    height: 3rem;
+    width: 5.5rem;
+    border-radius: 0.3rem;
+    font-size: 20px;    
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+    display: none;
+}
+
+#btn-restart:hover{
+    background-color: #FAFFFA;
+    color: #f02d46;
+}
